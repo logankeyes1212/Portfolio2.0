@@ -9,7 +9,7 @@ p {
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: white;
 }
 
 .parallax-container {
@@ -22,6 +22,48 @@ p {
     width: 100%;
   }
 
+#zoom {
+  /* padding: 50px; */
+  /* background-color: green; */
+  transition: transform .2s;
+  /* width: 200px;
+  height: 200px; */
+  margin: 0 auto;
+}
+
+#zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.projects{
+  border: 1px solid black;
+}
+#slide {
+  position: absolute;
+  left: -100px;
+  /* width: 100px; */
+  /* height: 100px; */
+  /* background: blue; */
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 100px; 
+  /* border: 1px solid black; */
+}
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -51,3 +93,4 @@ footer.page-footer {
 .welcome{
   color: white;
 }
+
